@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-4 bg-dark text-light">
+                <div class="my-3">
+                    <h3 class="text-center">Generador de Contraseña</h3>
+                </div>
+                <!--Inicio Boostrap-->
+                <div class="mb-3">
+                    <label for="inputLength" class="form-label">Longitud</label>
+                    <input type="number" id="inputLength" class="form-control text-center" min="8" max="20" placeholder="contraseña" value="12">
+                  </div>
+
+                  <div class="form-check my-3">
+                    <label class="form-check-label" for="checkbox1">Incluir Numeros</label>
+                    <input class="form-check-input" id="checkbox1" type="checkbox" />
+                  </div>
+
+                  <div class="form-check my-3">
+                    <label class="form-check-label" for="checkbox2">Incluir Simbolos</label>
+                    <input class="form-check-input" id="checkbox2" type="checkbox" />
+                  </div>
+
+                  <div class="form-check my-3">
+                    <label class="form-check-label" for="checkbox3">Incluir Mayusculas</label>
+                    <input class="form-check-input" id="checkbox3" type="checkbox" />
+                  </div>
+
+                  <div class="d-grip gap-2 my-3">
+                    <button class="btn btn-primary" id="btnGenerate">Generar Contraseña</button>
+                  </div>
+                  <hr />
+                  <div class="d-grip gap-2 py-3">
+                    <span id="generatedPassword" class="badge bg-success"></span>
+                  </div>
+                <!--Fin Boostrap-->
+            </div>
+        </div>
+    </div>
+    <script src="Main.js"></script>
+</body>
+</html>
